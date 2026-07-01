@@ -8,141 +8,141 @@
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-*Colección de proyectos y ejercicios de Machine Learning desarrollados durante la Maestría en Ingeniería de Sistemas y Computación — Universidad de los Andes*
+*Collection of Machine Learning projects and exercises developed during the MSc in Systems and Computing Engineering — Universidad de los Andes, Colombia*
 
 </div>
 
 ---
 
-## 📁 Estructura del repositorio
+## 📁 Repository Structure
 
 ```
 machine-learning/
-├── 01-exploratory-data-analysis/    # EDA y manipulación de datos
-├── 02-linear-regression/            # Regresión lineal
-├── 03-polynomial-lasso-ridge/       # Regularización y regresión polinomial
-├── 04-logistic-regression/          # Regresión logística y clasificación
-├── 05-knn-decision-trees/           # KNN, árboles de decisión
-├── 06-ml-pipelines/                 # Pipelines de ML
-└── 07-clustering-kmeans/            # Clustering no supervisado
+├── 01-exploratory-data-analysis/    # EDA & data manipulation
+├── 02-linear-regression/            # Linear regression
+├── 03-polynomial-lasso-ridge/       # Regularization & polynomial regression
+├── 04-logistic-regression/          # Logistic regression & classification
+├── 05-knn-decision-trees/           # KNN & decision trees
+├── 06-ml-pipelines/                 # ML pipelines
+└── 07-clustering-kmeans/            # Unsupervised learning
 ```
 
 ---
 
-## 🗂️ Proyectos
+## 🗂️ Projects
 
 ### 📊 01 · Exploratory Data Analysis
-> Análisis exploratorio de un dataset de canciones de Spotify con más de 18,000 registros.
+> Exploratory analysis of a Spotify songs dataset with over 18,000 records.
 
-| Notebook | Descripción | Dataset |
+| Notebook | Description | Dataset |
 |----------|-------------|---------|
-| [`spotify-songs-eda.ipynb`](./01-exploratory-data-analysis/spotify-songs-eda.ipynb) | Análisis de popularidad, bailabilidad y características de canciones | Spotify Songs (~18K registros) |
+| [`spotify-songs-eda.ipynb`](./01-exploratory-data-analysis/spotify-songs-eda.ipynb) | Analysis of song popularity, danceability and audio features | Spotify Songs (~18K records) |
 
-**Conceptos:** Pandas · Matplotlib · Seaborn · Estadística descriptiva · Visualización de datos
+**Concepts:** Pandas · Matplotlib · Seaborn · Descriptive statistics · Data visualization
 
 ---
 
 ### 📈 02 · Linear Regression
-> Predicción de popularidad musical usando regresión lineal simple y múltiple.
+> Predicting music popularity using simple and multiple linear regression.
 
-| Notebook | Descripción | Dataset |
+| Notebook | Description | Dataset |
 |----------|-------------|---------|
-| [`linear-regression-music-popularity.ipynb`](./02-linear-regression/linear-regression-music-popularity.ipynb) | Modelo de regresión lineal para predecir popularidad de canciones | Spotify Songs |
+| [`linear-regression-music-popularity.ipynb`](./02-linear-regression/linear-regression-music-popularity.ipynb) | Linear regression model to predict song popularity | Spotify Songs |
 
-**Conceptos:** Regresión lineal · MSE · R² · Train/Test split · scikit-learn
+**Concepts:** Linear regression · MSE · R² · Train/Test split · scikit-learn
 
 ---
 
 ### 🔧 03 · Polynomial Regression & Regularization
-> Comparación de técnicas de regularización para prevenir overfitting.
+> Comparison of regularization techniques to prevent overfitting.
 
-| Notebook | Descripción | Dataset |
+| Notebook | Description | Dataset |
 |----------|-------------|---------|
-| [`polynomial-regression-song-features.ipynb`](./03-polynomial-lasso-ridge/polynomial-regression-song-features.ipynb) | Regresión polinomial sobre características de canciones | Spotify Songs |
-| [`lasso-regularization.ipynb`](./03-polynomial-lasso-ridge/lasso-regularization.ipynb) | Regularización L1 — selección automática de features | Spotify Songs |
-| [`ridge-regularization.ipynb`](./03-polynomial-lasso-ridge/ridge-regularization.ipynb) | Regularización L2 — control de complejidad del modelo | Spotify Songs |
+| [`polynomial-regression-song-features.ipynb`](./03-polynomial-lasso-ridge/polynomial-regression-song-features.ipynb) | Polynomial regression on song audio features | Spotify Songs |
+| [`lasso-regularization.ipynb`](./03-polynomial-lasso-ridge/lasso-regularization.ipynb) | L1 regularization — automatic feature selection | Spotify Songs |
+| [`ridge-regularization.ipynb`](./03-polynomial-lasso-ridge/ridge-regularization.ipynb) | L2 regularization — model complexity control | Spotify Songs |
 
-**Conceptos:** Regularización L1/L2 · Overfitting · Bias-Variance tradeoff · Cross-validation
+**Concepts:** L1/L2 regularization · Overfitting · Bias-Variance tradeoff · Cross-validation
 
 ---
 
 ### 🎯 04 · Logistic Regression & Classification
-> Clasificación binaria y proyecto integrador de ML.
+> Binary classification and end-to-end ML project.
 
-| Notebook | Descripción | Dataset |
+| Notebook | Description | Dataset |
 |----------|-------------|---------|
-| [`logistic-regression-classification.ipynb`](./04-logistic-regression/logistic-regression-classification.ipynb) | Regresión logística para clasificación binaria | Custom dataset |
-| [`project-logistic-regression.ipynb`](./04-logistic-regression/project-logistic-regression.ipynb) ⭐ | **Proyecto completo:** pipeline de clasificación end-to-end | Datos_Etapa_1 |
+| [`logistic-regression-classification.ipynb`](./04-logistic-regression/logistic-regression-classification.ipynb) | Logistic regression for binary classification | Custom dataset |
+| [`project-logistic-regression.ipynb`](./04-logistic-regression/project-logistic-regression.ipynb) ⭐ | **Full project:** end-to-end classification pipeline | Datos_Etapa_1 |
 
-**Conceptos:** Regresión logística · Matriz de confusión · Precision · Recall · F1-Score · ROC-AUC
+**Concepts:** Logistic regression · Confusion matrix · Precision · Recall · F1-Score · ROC-AUC
 
 ---
 
 ### 🌳 05 · KNN & Decision Trees
-> Algoritmos de clasificación basados en vecinos y árboles.
+> Classification algorithms based on neighbors and trees.
 
-| Notebook | Descripción | Dataset |
+| Notebook | Description | Dataset |
 |----------|-------------|---------|
-| [`knn-employee-attrition.ipynb`](./05-knn-decision-trees/knn-employee-attrition.ipynb) | Predicción de rotación de empleados con KNN | Employee Attrition |
-| [`decision-trees-employee-attrition.ipynb`](./05-knn-decision-trees/decision-trees-employee-attrition.ipynb) | Árboles de decisión para clasificación de empleados | Employee Attrition |
-| [`heart-disease-prediction.ipynb`](./05-knn-decision-trees/heart-disease-prediction.ipynb) ⭐ | **Predicción de enfermedades cardíacas** con regresión logística | Heart Disease (~250K registros) |
+| [`knn-employee-attrition.ipynb`](./05-knn-decision-trees/knn-employee-attrition.ipynb) | Employee turnover prediction using KNN | Employee Attrition |
+| [`decision-trees-employee-attrition.ipynb`](./05-knn-decision-trees/decision-trees-employee-attrition.ipynb) | Decision tree classifier for employee attrition | Employee Attrition |
+| [`heart-disease-prediction.ipynb`](./05-knn-decision-trees/heart-disease-prediction.ipynb) ⭐ | **Heart disease prediction** with logistic regression | Heart Disease (~250K records) |
 
-**Conceptos:** KNN · Árboles de decisión · Hiperparámetros · GridSearchCV · Imbalanced datasets
+**Concepts:** KNN · Decision trees · Hyperparameters · GridSearchCV · Imbalanced datasets
 
 ---
 
 ### ⚙️ 06 · ML Pipelines
-> Automatización y estandarización de flujos de trabajo en ML.
+> Automation and standardization of ML workflows.
 
-| Notebook | Descripción | Dataset |
+| Notebook | Description | Dataset |
 |----------|-------------|---------|
-| [`ml-pipelines-insurance.ipynb`](./06-ml-pipelines/ml-pipelines-insurance.ipynb) | Pipeline completo con preprocesamiento, transformación y modelado | Employee Attrition |
+| [`ml-pipelines-insurance.ipynb`](./06-ml-pipelines/ml-pipelines-insurance.ipynb) | Full pipeline with preprocessing, transformation and modeling | Employee Attrition |
 
-**Conceptos:** sklearn Pipeline · ColumnTransformer · StandardScaler · OneHotEncoder · Automatización
+**Concepts:** sklearn Pipeline · ColumnTransformer · StandardScaler · OneHotEncoder · Automation
 
 ---
 
 ### 🔵 07 · Clustering & Unsupervised Learning
-> Aprendizaje no supervisado y proyecto final de agrupamiento.
+> Unsupervised learning and final clustering project.
 
-| Notebook | Descripción | Dataset |
+| Notebook | Description | Dataset |
 |----------|-------------|---------|
-| [`kmeans-clustering-music.ipynb`](./07-clustering-kmeans/kmeans-clustering-music.ipynb) | Segmentación de canciones con K-Means | Spotify Songs |
-| [`project-clustering-kmeans.ipynb`](./07-clustering-kmeans/project-clustering-kmeans.ipynb) ⭐ | **Proyecto completo:** clustering y análisis de segmentos | Datos_Etapa_2 |
+| [`kmeans-clustering-music.ipynb`](./07-clustering-kmeans/kmeans-clustering-music.ipynb) | Song segmentation using K-Means | Spotify Songs |
+| [`project-clustering-kmeans.ipynb`](./07-clustering-kmeans/project-clustering-kmeans.ipynb) ⭐ | **Full project:** clustering analysis and segment profiling | Datos_Etapa_2 |
 
-**Conceptos:** K-Means · Elbow Method · Silhouette Score · PCA · Visualización de clusters
+**Concepts:** K-Means · Elbow Method · Silhouette Score · PCA · Cluster visualization
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Tech Stack
 
-| Categoría | Herramientas |
-|-----------|-------------|
-| Lenguaje | Python 3.x |
-| Manipulación de datos | Pandas, NumPy |
+| Category | Tools |
+|----------|-------|
+| Language | Python 3.x |
+| Data manipulation | Pandas, NumPy |
 | Machine Learning | scikit-learn |
-| Visualización | Matplotlib, Seaborn |
-| Entorno | Jupyter Notebook, Google Colab |
+| Visualization | Matplotlib, Seaborn |
+| Environment | Jupyter Notebook, Google Colab |
 
 ---
 
-## 🚀 Cómo ejecutar los notebooks
+## 🚀 Getting Started
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/mjgarcia-bonilla/machine-learning.git
 cd machine-learning
 
-# Instalar dependencias
+# Install dependencies
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 
-# Abrir Jupyter
+# Launch Jupyter
 jupyter notebook
 ```
 
 ---
 
-## 👩‍💻 Autora
+## 👩‍💻 Author
 
 **María J. García-Bonilla** — AI Engineer | MSc Universidad de los Andes
 
